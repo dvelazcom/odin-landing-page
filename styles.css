@@ -1,3 +1,6 @@
+body {
+    margin: 0;
+}
 p, ul {
     margin: 0;
 }
@@ -5,10 +8,33 @@ p, ul {
 ul {
     list-style-type: none;
     padding: 0;
+    gap: 15px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
 }
 
 .header, .footer, .level1 {
     background-color: #1F2937;
+}
+
+.header, .level1, .level2, .level3, .level4, .footer {
+    padding: 0px 200px;
+}
+
+.blue-zone {
+    border-radius: 10px;
+}
+
+.header, .right-links {
+    display:flex;
+    padding-top: 10px;
+}
+
+.header{
+    justify-content: space-between;
 }
 
 .title {
@@ -17,12 +43,55 @@ ul {
     font-weight: 700;
 }
 
+.level1 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    gap: 50px;
+}
+
+.info {
+    flex-wrap: wrap;
+    width: 450px;
+    
+}
+
 .level2, .level4 {
     background-color: white;
 }
 
+.level2 {
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+}
+
+.title2 {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+img {
+    border-radius: 6px;
+}
+
+.level4 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
 .level3 {
     background-color: #E5E7EB;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bold-text {
@@ -40,13 +109,39 @@ a {
     text-decoration: none;
 }
 
-.blue-zone, .button2 {
+.blue-zone, .button2, .button1 {
     background-color: #3882f6;
+}
+
+.blue-zone {
+    display: flex;
+    justify-content: space-between;
+    padding: 36px 90px;
+}
+
+.main-text {
+    color: white;
+    font-weight: 700;
+}
+
+.sub-text {
+    color: #E5E7EB;
+}
+
+.button2, .button1 {
+    color: white;
+    border-radius: 8px;
+    font-weight: 700;
+    padding: 8px 24px;
 }
 
 .button2 {
     border: 2px solid #E5E7EB;
-    border-radius: 8px;
+    
+}
+
+.button1 {
+    border: 0px;
 }
 
 .title2 {
@@ -55,7 +150,10 @@ a {
     font-weight: 800;
 }
 
-
+.frame {
+    width: 600px;
+    height: 200px;
+}
 .quote, .author {
     color: #1F2937;
 }
@@ -67,4 +165,13 @@ a {
 
 .author {
     font-weight: 800;
+    text-align: right;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 30px 90px;
 }
