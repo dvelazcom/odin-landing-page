@@ -103,6 +103,7 @@ img {
 .paragraph, a {
     font-size: 18px;
     color: #E5E7EB;
+    padding-bottom: 8px;
 }
 
 a {
